@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РВТ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="img/logo.svg" alt="logo">
+        </div>
+        <div class="header__right">
+            <div class="header__search">
+                <div class="header__search-btn"></div>
+                <input class="header__search-field" type="text" placeholder="Введите название компании...">
+                <div class="header__search_mb invisible">
+                    <div class="header__search-btn header__search-btn_mb"></div>
+                    <input class="header__search-field_mb" type="text" placeholder="">
+                    <div class="header__search-close"></div>
+                </div>
+
+            </div>
+
+            <div class="header__menu"></div>
+            <div class="button header__add">Добавить компанию +</div>
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Ремонт квартир</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Дизайн интерьеров</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Карта компаний</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Последний отзыв</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Калькулятор ремонта</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="mb-menu invisible">
+        <div class="logo mb-menu__logo">
+            <img class="logo__img" src="img/logo.svg" alt="logo">
+        </div>
+        <div class="mb-menu__close"></div>
+        <div class="button mb-menu__add">Добавить компанию +</div>
+        <nav class="menu  mb-menu__menu">
+            <ul class="menu__list">
+                <li class="menu__item mb-menu__item">
+                    <a class="menu__link menu__link_mb" href="#">Ремонт квартир</a>
+                </li>
+                <li class="menu__item mb-menu__item">
+                    <a class="menu__link menu__link_mb" href="#">Дизайн интерьеров</a>
+                </li>
+                <li class="menu__item mb-menu__item">
+                    <a class="menu__link menu__link_mb" href="#">Карта компаний</a>
+                </li>
+                <li class="menu__item mb-menu__item">
+                    <a class="menu__link menu__link_mb" href="#">Последний отзыв</a>
+                </li>
+                <li class="menu__item mb-menu__item">
+                    <a class="menu__link menu__link_mb" href="#">Калькулятор ремонта</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <main class="main">
+        <div class="main__left">
+            <section class="description">
+                <p class="description__text">
+                    Воспользуйтесь нашим кальулятором, чтобы проссчитать примерную стоимость вашего ремонта. Калькулятор
+                    считает среднюю цену на основе прайсов всех предствленных в рейтинге компаний. Не стоит доверять
+                    компаниям, которые указывают цену от 1500 за квадратный метр...
+                </p>
+            </section>
+            <section class="calc">
+                <form class="calc__form" action="">
+                    <h1 class="calc__heading">Калькулятор ремонта</h1>
+                    <div class="calc__type-room-box calc__box">
+                        <label class="calc__name" for="type-room">Тип помещения:</label>
+                        <select class="calc__field calc__field_md  calc__field_select" name="type-room" id="type-room">
+                        </select>
+                    </div>
+                    <div class="calc__s-room-box calc__box">
+                        <label class="calc__name" for="s-room">Площадь ремонта:</label>
+                        <div class="calc__range-box">
+                            <input class="calc__field calc__field_md" name="s-room" id="s-room" type="text" value="42">
+                            <input type="range" min="1" max="300" value="40" class="calc__range" id="s-room-range">
+                        </div>
+
+                    </div>
+
+                    <div class="calc__electric-box calc__box">
+                        <label class="calc__name" for="electric">Электрика:</label>
+                        <select class="calc__field calc__field_select" name="electric" id="electric">
+                        </select>
+                    </div>
+                    <div class="calc__perimeter-box calc__box">
+                        <label class="calc__name" for="perimeter">Общий периметр стен:</label>
+                        <input class="calc__field calc__field_md" name="perimeter" id="perimeter" type="text"
+                            value="50">
+                    </div>
+                    <div class="calc__type-repair-box calc__box">
+                        <label class="calc__name" for="type-repair">Тип ремонта:</label>
+                        <select class="calc__field calc__field_select" name="type-repair" id="type-repair">
+                        </select>
+                    </div>
+
+                    <div class="calc__ceilings-box calc__box">
+                        <label class="calc__name" for="ceilings">Потолки:</label>
+                        <select class="calc__field calc__field_select" name="ceilings" id="ceilings">
+                        </select>
+                    </div>
+                    <div class="calc__barhroom-box calc__box">
+                        <label class="calc__name" for="bathroom">Ремонт санузла:</label>
+                        <select class="calc__field calc__field_select" name="bathroom" id="bathroom">
+                        </select>
+                    </div>
+                    <div class="calc__s-bathroom-box calc__box">
+                        <label class="calc__name" for="s-bathroom">Площадь санузла:</label>
+                        <div class="calc__range-box">
+                            <input class="calc__field calc__field_md calc__field_bathroom" name="s-bathroom"
+                                id="s-bathroom" type="text" value="5">
+                            <input type="range" min="1" max="20" value="5" class="calc__range calc__range_bathroom"
+                                id="s-bathroom-range">
+                        </div>
+
+                    </div>
+                    <div class="calc__warm-floor-box calc__box">
+                        <label class="calc__name" for="warm-floor">Теплые полы:</label>
+                        <select class="calc__field calc__field_select" name="warm-floor" id="warm-floor">
+                        </select>
+                    </div>
+
+                    <div class="calc__door-box">
+                        <div class="calc__door-box-left">
+                            <label class="calc__name" for="doors">Двери:</label>
+                            <select class="calc__field calc__field_select" name="doors" id="doors">
+                            </select>
+                        </div>
+                        <div class="calc__door-box-right">
+                            <label class="calc__name" for="entrance-door">Входная дверь:</label>
+                            <div class="calc__radio-box">
+                                <input class="calc__radio" id="entrance-door" type="checkbox">
+                                <p class="calc__radio-text">Нет</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="calc__result-box">
+                    <p class="calc__info">*Напоминаем, что это примерная стоимость</p>
+                    <div class="calc__result">
+                        <p class="calc__text">Стоимость вашего ремонта</p>
+                        <p class="calc__total">Итого: <span class="calc__sum">140 000 руб.</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="top">
+            <h2 class="top__heading">Лучшие компании по ремонту</h2>
+            <ul class="top__list">
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+                </li>
+                <li class="top__item">
+                    <div class="top__logo"><img class="top__img" src="img/top-company.png" alt=""></div>
+                    <p class="top__name">Строй комплект Сервис</p>
+                    <div class="top__rating-box">
+                        <span class="top__rating">2700</span>
+                        <p class="top__total">баллов</p>
+                    </div>
+
+                </li>
+            </ul>
+        </aside>
+    </main>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>
