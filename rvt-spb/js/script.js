@@ -4,10 +4,14 @@ const mbSearch = document.querySelector('.header__search_mb')
 body.addEventListener('click', () => {
     if (event.target.className === 'header__menu') {
         mbMenu.classList.toggle('invisible')
+        mbMenu.classList.add('scale-in-ver-top')
+        mbMenu.classList.remove('scale-out-ver-top')
         body.classList.toggle('scroll-hidden')
     }
     if (event.target.className === 'mb-menu__close') {
-        mbMenu.classList.toggle('invisible')
+        mbMenu.classList.remove('scale-in-ver-top')
+        mbMenu.classList.add('scale-out-ver-top')
+        setTimeout(() => mbMenu.classList.toggle('invisible'), 500)
         body.classList.toggle('scroll-hidden')
     }
     if (event.target.className === 'header__search-btn' && body.clientWidth < 767) {
